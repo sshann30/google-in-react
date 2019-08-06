@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-
+import SimpleMap from './map';
 
 class Projects extends Component {
   constructor(props) {
@@ -13,7 +13,8 @@ class Projects extends Component {
     if(this.state.activeTab === 0){
       return(
         <div className="projects-grid">
-          {/* maps stuff will go here */}
+          <SimpleMap>
+          </SimpleMap>
         </div>
 
 
