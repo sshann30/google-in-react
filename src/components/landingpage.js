@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 import SimpleMap from './map';
+import MyFancyComponent from './reactmap';
 
 class Projects extends Component {
   constructor(props) {
@@ -29,7 +30,11 @@ class Projects extends Component {
       )
     } else if(this.state.activeTab === 3) {
       return (
-        <div><h1>This is Google Tool 4</h1></div>
+        <div className="projects-grid">
+          <MyFancyComponent>
+          </MyFancyComponent>
+        </div>
+
       )
     }
 
@@ -42,9 +47,9 @@ class Projects extends Component {
       <div>
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
           <Tab>Maps</Tab>
-          <Tab>Google Tool 2</Tab>
-          <Tab>Google Tool 3</Tab>
-          <Tab>Google Tool 4</Tab>
+          <Tab>Calendar</Tab>
+          <Tab>Images</Tab>
+          <Tab>different maps npm</Tab>
         </Tabs>
 
 
