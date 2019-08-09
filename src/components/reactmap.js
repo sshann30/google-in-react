@@ -5,7 +5,8 @@ import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-map
 // adam recommended this one
 const MyMapComponent = compose(
   withProps({
-    googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
+    googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyB8CBgdkKU59pl1iDeoXrn5ScbeGYuAlLM&v=3.exp&libraries=geometry,drawing,places",
+    // Google: "hey you know what would be cool? GIMME YOUR CREDIT CARD INFO!!!"
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `400px` }} />,
     mapElement: <div style={{ height: `100%` }} />,

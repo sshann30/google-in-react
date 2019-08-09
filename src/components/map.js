@@ -17,7 +17,9 @@ class SimpleMap extends Component {
       // Important! Always set the container height explicitly
       <div style={{ height: '100vh', width: '100%' }}>
         <GoogleMapReact
-        //   bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
+          bootstrapURLKeys={{ key: 'AIzaSyB8CBgdkKU59pl1iDeoXrn5ScbeGYuAlLM'}}
+          // Can I use this key in multiple places? Why does adding an API key make it worse?
+          // https://console.cloud.google.com/apis/credentials?folder=&organizationId=&project=mytestapp-249223
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >

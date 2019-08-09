@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, } from 'react-mdl';
+// Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton 
 import SimpleMap from './map';
 import MyFancyComponent from './reactmap';
 
@@ -14,8 +15,7 @@ class Projects extends Component {
     if(this.state.activeTab === 0){
       return(
         <div className="projects-grid">
-          <SimpleMap>
-          </SimpleMap>
+          <SimpleMap/>
         </div>
 
 
@@ -31,8 +31,7 @@ class Projects extends Component {
     } else if(this.state.activeTab === 3) {
       return (
         <div className="projects-grid">
-          <MyFancyComponent>
-          </MyFancyComponent>
+          <MyFancyComponent/>
         </div>
 
       )
